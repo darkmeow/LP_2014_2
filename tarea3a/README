@@ -1,0 +1,59 @@
+Tarea 3 LP
+==========
+
++---------------------------------------+
+|										|
+|		 Binary Tree Racket!		  	|
+|								  		|
+|	Barbarita Lara		201021048-0		|
+|	Ricardo Valencia	2930036-4		|
+|										|
+|										|
++---------------------------------------+
+
+Estrategia:
+===========
+
+Para la función 1 se define un retorno auxiliar como verdadero (global). Se pregunta si el nodo es nulo, en caso de ser nulo no se hace nada. De lo contario, se pregunta si el largo del árbol es igual a N, en cuyo caso se llama recursivamente a la función "abN?" pasándole el árbol izquierdo y derecho, de lo contario se cambio el valor del retorno auxiliar a falso. Finalmente se imprime el valor del retorno auxiliar.
+
+Para las funciones 2, 3 y 4 se usó los constructores de árbol vacío (arb_vacio) y nodo, como también 
+funciones para ver el dato, el subarbol derecho e izquierdo junto con la verificación de árbol vacío.
+
+Para el función 2 se uso una función para insertar una lista en un arbol ocupando recursividad para 
+realizar la inserción ordenada, luego para la función crea-ab1 se le ingresa la lista y un arbol 
+vacio para luego usar la función de inserción descrita anteriormente.
+
+Para el función 3 se hace uso de la función file->list que pasa los datos de un archivo a una lista 
+y luego usa "crear-ab1" dando como argumento cada línea del archivo ingresado a través de la lista, de 
+esta forma se crea el árbol binario.
+
+Para la función 4  se hace uso de la función "desencolar", la cual usa la función "lista_arb" la cual 
+enlista todos los elementos del árbol de forma ordenada, luego desencolar toma la lista y guadar los 
+elementos uno a uno en cada línea del archivo
+
+Para la función 5 se hace uso de "arb_vacio" que verifica si el arbol1 está vacío, sino entrega arbol1. 
+Luego, según la operación elegida, pregunta si el arbol 1 es par (pareado), después crea un nuevo par
+en base al nodo izquierdo del arbol 1 y 2, aplicando la operación y del nodo derecho del arbol 1 y 2, aplicando la operación.
+
+Formas de probar las funciones:
+===============================
+Función 1:
+(abN? a1 3) ; verifica si es un árbol binario 3.
+
+Función 2:
+(crear-ab1 '(5 12 9 8 3 4 6)) ;crea árbol 
+
+Función 3:
+(crear-ab1-archivo "archivo") ;crea árbol desde un archivo
+
+Función 4:
+(guardar-abN arbol2 "ordenado") ;guarda el arbol2 en un archivo de nombre ordenado
+
+Función 5:
+(operar + arbol2 arbol3) ;como sumar dos arboles
+(operar - arbol2 arbol3) ;como restar dos arboles
+(operar * arbol2 arbol3) ;como multiplicar dos arboles
+(operar / arbol2 arbol3) ;como dividir dos arboles OJO CON LA DIVISIÓN POR 0
+
+
+
