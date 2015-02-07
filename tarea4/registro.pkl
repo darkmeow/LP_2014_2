@@ -1,0 +1,30 @@
+(dp0
+S'08/12/14'
+p1
+(lp2
+(S'rob'
+p3
+S'buena'
+p4
+(S'Tallarines con salsa'
+p5
+tp6
+tp7
+a(S'barbarita'
+p8
+S'buena'
+p9
+(g5
+S'Lomo a la salsa de champinon con papas duquesas'
+p10
+tp11
+tp12
+a(S'mateo'
+p13
+S'buena'
+p14
+(S'Pan con Chancho'
+p15
+tp16
+tp17
+as.

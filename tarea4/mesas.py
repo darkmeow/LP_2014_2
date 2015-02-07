@@ -1,0 +1,14 @@
+
+#diccionarios de mesas
+
+mesas = { }
+
+
+
+
+
+
+
+
+
+

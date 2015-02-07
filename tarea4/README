@@ -1,0 +1,31 @@
+TAREA 4 LP
+==========
+
+Barbarita Lara 	201021048-0
+Ricardo Valencia 	2930036-4
+
+ESTRATEGIA
+===========
+
+*Clase Restaurante: Se encarga de calcular el ingreso total recaudado históricamente.
+*Clase Mesa: Se encarga de insertar los valores correspondientes a el número de mesa, su capacidad, indicador de disponibilidad. Además tiene otra función para guardar los valores en el diccionario de mesas.
+*Clase Plato: Se encarga de transformar el menu.txt en un diccionario
+*Clase Registro: Se encarga de guardar el registro serializado (registro.pkl).
+*freq.py: Se encarga de actualizar el archivo frecuencia.txt en el cual estan organizadas las frecuencias de manera creciente.
+*mesas.py: Contiene diccionario de las mesas.
+
+
+SUPUESTOS
+===========
+
+*Se asume que todas las personas pedirán un plato.
+*Debe existir el archivo registro.pkl
+*0 significa no disponible y 1 disponible
+*Forma de agregar una mesa "insertarMesa(1, 2, 0)", primer parameto indica numero de la mesa, segundo indica capacidad de la mesa y el tercero indica disponibilidad.
+*Al Despedir cliente, se debe "recordar" la mesa a eliminar
+
+
+MÓDULOS EXTRAS
+================
+
+MatPlotLib: Se usa "pip install matplotlib" para instalar la librería. Luego se importa en el main de nuestro programa. Esta librería se utiliza para graficar.
